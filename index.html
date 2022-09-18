@@ -139,6 +139,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-socials">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Keyboards</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Legionare MX9</h4>
+                <img src="img/keyboards/1.png" alt="Legionare MX9" class="keyboard-img" />
+                <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Redragon Tvastar</h4>
+                <img src="img/keyboards/2.png" alt="Redragon" class="keyboard-img" />
+                <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Cougar</h4>
+                <img src="img/keyboards/3.png" alt="Cougar" class="keyboard-img" />
+                <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -323,6 +357,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 35,
+        speed: 400,
+        scale: 1.1,
+        glare: true,
       });
     </script>
   </body>
